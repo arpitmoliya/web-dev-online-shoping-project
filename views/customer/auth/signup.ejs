@@ -1,30 +1,58 @@
 <%- include('../includes/head',{pageTitle: 'Signup'}) %>
+<link rel="stylesheet" href="/styles/form.css">
+<link rel="stylesheet" href="/styles/auth.css">
 </head>
 <body>
-    <%- include('../includes/header') %> 
-    <main>
-        <h1>Create New Account</h1>
-        <form action="" method="">
-            <div>
-                <label for="email">E-Mail</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="confirm-email">Confirm Email</label>
-                <input type="email" id="confirm-email" name="confirm-email" required>
-            </div>
-            <div>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" minlength="6" required>
-            </div>
-            <hr>
-            <div>
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required>
-            </div>
-            
-        </form>
-    </main>
-<%- include('../includes/footer') %> 
+  <%- include('../includes/header') %> 
+  <main>
+    <h1>Create New Account</h1>
+    <form action="" method="">
+      <div>
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label for="confirm-email">Confirm Email</label>
+        <input type="email" id="confirm-email" name="confirm-email" required />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="6"
+          required
+        />
+      </div>
+      <hr />
+      <div>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required />
+      </div>
+      <div>
+        <label for="street">Street</label>
+        <input type="text" id="street" name="street" required />
+      </div>
+      <div>
+        <label for="postal">Postal Code</label>
+        <input
+          type="text"
+          id="postal"
+          name="postal"
+          minlength="6"
+          maxlength="6"
+          required
+        />
+      </div>
+      <div>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required />
+      </div>
+      <button class="btn">Create Button</button>
+      <div id="switch-form"><a href="/login">Login Instead</a></div>
+    </form>
+  </main>
+  <%- include('../includes/footer') %>
 </body>
 </html>
