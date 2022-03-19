@@ -7,15 +7,15 @@
   <main>
     <h1>Create New Account</h1>
     <form action="" method="">
-      <div>
+      <p>
         <label for="email">E-Mail</label>
         <input type="email" id="email" name="email" required />
-      </div>
-      <div>
+      </p>
+      <p>
         <label for="confirm-email">Confirm Email</label>
         <input type="email" id="confirm-email" name="confirm-email" required />
-      </div>
-      <div>
+      </p>
+      <p>
         <label for="password">Password</label>
         <input
           type="password"
@@ -24,17 +24,17 @@
           minlength="6"
           required
         />
-      </div>
+      </p>
       <hr />
-      <div>
+      <p>
         <label for="fullname">Full Name</label>
         <input type="text" id="fullname" name="fullname" required />
-      </div>
-      <div>
+      </p>
+      <p>
         <label for="street">Street</label>
         <input type="text" id="street" name="street" required />
-      </div>
-      <div>
+      </p>
+      <p>
         <label for="postal">Postal Code</label>
         <input
           type="text"
@@ -44,13 +44,13 @@
           maxlength="6"
           required
         />
-      </div>
-      <div>
+      </p>
+      <p>
         <label for="city">City</label>
         <input type="text" id="city" name="city" required />
-      </div>
+      </p>
       <button class="btn">Create Button</button>
-      <div id="switch-form"><a href="/login">Login Instead</a></div>
+      <p id="switch-form"><a href="/login">Login Instead</a></p>
     </form>
   </main>
   <%- include('../includes/footer') %>
