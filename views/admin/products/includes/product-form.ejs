@@ -20,8 +20,10 @@
       name="image"
       id="image"
       accept="image/pnd,image/jpg"
-      required
-    />
+      <%
+      if(imageRequired)
+      {
+      %>required<% } %> />
   </p>
   <p>
     <label for="summary">Summary</label>
