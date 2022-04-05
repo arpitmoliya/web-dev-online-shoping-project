@@ -8,7 +8,8 @@
     <main>
       <h1>Add new Product</h1>
       <%- include('includes/product-form',{submitPath: '/admin/products',
-      product: { title : '', summary: '', price: '', description : '', }}) %>
+      product: { title : '', summary: '', price: '', description : '', },
+      imageRequired:true}) %>
     </main>
     <%- include('../../shared/includes/footer') %>
   </body>
