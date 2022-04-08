@@ -1,17 +1,24 @@
 <html>
   <head>
-    <%- include('../../shared/includes/head',{pageTitle: 'All Products'}) %>
+    <%- include('../../shared/includes/head',{pageTitle: product.title}) %>
     <link rel="stylesheet" href="/styles/products.css" />
+    <script src="/scripts/cart-management.js" defer></script>
   </head>
   <body>
     <%- include('../../shared/includes/header') %>
     <main id="product-details">
       <header>
         <img src="<%= product.imageUrl %>" alt="<%= product.title %>" />
-        <div>
+        <div id="product-info">
           <h1><%= product.title %></h1>
           <p>$<%= product.price %></p>
-          <button>Add to cart</button>
+          <button
+            class="btn"
+            data-productid="<%= product.id %>"
+            data-csrf="<%= locals.csrfToken %>"
+          >
+            Add to cart
+          </button>
         </div>
       </header>
       <p id="product-description"><%= product.description %></p>
