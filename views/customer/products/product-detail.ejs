@@ -8,9 +8,11 @@
     <main id="product-details">
       <header>
         <img src="<%= product.imageUrl %>" alt="<%= product.title %>" />
-        <h1><%= product.title %></h1>
-        <p>$<%= product.price %></p>
-        <button>Add to cart</button>
+        <div>
+          <h1><%= product.title %></h1>
+          <p>$<%= product.price %></p>
+          <button>Add to cart</button>
+        </div>
       </header>
       <p id="product-description"><%= product.description %></p>
     </main>
