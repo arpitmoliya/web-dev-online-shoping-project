@@ -20,6 +20,8 @@ async function addOrder(req, res, next) {
     return next(error);
   }
 
+  cart = res.locals.cart;
+
   const order = new Order(cart, userDocument);
 
   try {
